@@ -1,0 +1,297 @@
+/* Reset margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(105, 90, 239, 0.8);
+    background-image: url('https://r4.wallpaperflare.com/wallpaper/707/220/899/gradient-blue-pink-abstract-art-wallpaper-a33b436d2de9cbc5dfa6225748ab3818.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding-top: 80px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    width: 100%;
+     overflow-x: hidden; 
+    font-family: 'Tahoma', sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(197, 197, 197, 0.5);
+    backdrop-filter: blur(10px);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 1000;
+    font-family: 'Tahoma', sans-serif;
+}
+
+.navdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navdiv ul {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+}
+
+.navdiv ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.navdiv ul li a:hover {
+    color: #f4a261;
+}
+
+.content {
+    background: linear-gradient(to right, rgb(0, 81, 255), rgb(155, 155, 155));
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    max-width: 80%;
+    border-radius: 15px;
+    margin: 120px auto 50px;
+    font-family: 'Tahoma', sans-serif;
+    z-index: 10;
+}
+
+.description-box {
+    background: linear-gradient(to right, #007bff, #8a8d91);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    font-family: 'Tahoma', sans-serif;
+    position: relative;
+    z-index: 10;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 30px;
+}
+
+.container-table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    margin-bottom: 100px;
+}
+
+.banner-kecil {
+    background: linear-gradient(to right, rgb(0, 81, 255), rgb(155, 155, 155));
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    max-width: 60%;
+    margin: 120px auto 50px;
+    padding: 15px;
+    border-radius: 15px;
+    font-family: 'Tahoma', sans-serif;
+    z-index: 10;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.grid-item {
+    background: linear-gradient(to right, rgb(0, 81, 255), rgb(155, 155, 155));
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 27px;
+    border-radius: 8px;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+    position: relative;
+    font-family: 'Tahoma', sans-serif;
+    z-index: 10;
+}
+
+.grid-item:hover {
+    background: linear-gradient(to left, rgb(42, 236, 133), rgb(255, 221, 136));
+    transform: scale(1.1);
+    z-index: 20;
+}
+
+.grid-item a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Table */
+table {
+    width: 60%;
+    max-width: 90%;
+    border-collapse: collapse;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(to right, rgb(0, 81, 255), rgb(155, 155, 155));
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 20px auto 40px;
+    height: auto;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+}
+
+th {
+    background: rgba(0, 81, 255, 0.8);
+    font-weight: bold;
+    text-align: left;
+    width: 30%;
+}
+
+td {
+    text-align: left;
+    width: 70%;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+/* Partikel */
+.particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.particles span {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: move 10s linear infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-50px) translateX(20px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(100px) translateX(-20px);
+        opacity: 1;
+    }
+}
+
+/* Posisi Partikel */
+.particles span:nth-child(1) { top: 10%; left: 20%; animation-duration: 12s; }
+.particles span:nth-child(2) { top: 30%; left: 50%; animation-duration: 10s; }
+.particles span:nth-child(3) { top: 50%; left: 80%; animation-duration: 8s; }
+.particles span:nth-child(4) { top: 70%; left: 30%; animation-duration: 11s; }
+.particles span:nth-child(5) { top: 90%; left: 60%; animation-duration: 9s; }
+.particles span:nth-child(6) { top: 15%; left: 75%; animation-duration: 10s; }
+.particles span:nth-child(7) { top: 40%; left: 10%; animation-duration: 12s; }
+.particles span:nth-child(8) { top: 65%; left: 90%; animation-duration: 9s; }
+.particles span:nth-child(9) { top: 80%; left: 40%; animation-duration: 10s; }
+.particles span:nth-child(10) { top: 20%; left: 85%; animation-duration: 11s; }
+
+/* Tambahan untuk image-container dan responsif */
+
+/* RESPONSIF UNTUK LAYAR KECIL */
+@media (max-width: 768px) {
+    .banner-kecil {
+        max-width: 90%;
+        font-size: 20px;
+        padding: 15px;
+    }
+
+    .navdiv ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    table {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}
+/*bg belakang*/
+.content-wrapper {
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;        
+  }
+  
